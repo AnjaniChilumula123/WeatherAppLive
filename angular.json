@@ -20,6 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+           
             "outputPath": "dist/weather-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -70,9 +71,14 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options" : {
+            "browserTarget": "weatherApp:build",
+            "proxyConfig": "src/proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "browserTarget": "weatherApp:build:production"
+             
             },
             "development": {
               "browserTarget": "weatherApp:build:development"

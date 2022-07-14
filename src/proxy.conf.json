@@ -1,0 +1,10 @@
+
+{
+  "/current":
+  {
+    "target": "http://api.weatherstack.com",
+    "secure": false,
+    "changeOrigin" : true,
+    "logLevel" : "debug"
+  }
+}
