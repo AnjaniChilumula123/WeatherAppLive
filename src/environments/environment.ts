@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+  production: true,
   weatherAppUrl :'http://api.weatherstack.com/current',
   access_key : 'b0ff4ab44edc6f2683ee12f6290b35d9',
 
